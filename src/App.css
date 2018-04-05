@@ -1,20 +1,18 @@
-html,body{
+html,body,#root,.App{
   margin:0;
   padding:0;
   text-align: center;
+  width:100%;
+  height:100%;
 }
 /* Landing Page */
 #landing-page{
   position: relative;
+  width:100%;
+  height:100%;
 }
 #landing-about{
   margin-top:2em;
-}
-#landing-skills{
-
-}
-#landing-portfolio-btn{
-
 }
 #landing-headshot{
   border: 3px solid blue;
@@ -47,4 +45,38 @@ html,body{
   font-size: 1.5vmax;
   text-align: left;
   width:97%;
+}
+
+#landing-skills{
+  margin-top: 6vmax;
+  font-size: 3vmax;
+}
+#landing-skills-label{
+  
+}
+.skills-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+  width: 33.3%;
+}
+.skill-label{
+  font-size:2.6vmax;
+  margin-bottom:1vmax;
+  margin-top:0.5vmax;
+}
+.skill-item{
+  font-size:1.6vmax;
+  margin-bottom:0.5vmax;
+}
+#landing-portfolio-btn{
+  width: 100%;
+  position: absolute;
+  bottom:7vmax;
+}
+#landing-portfolio-btn a{
+  border:2px solid black;
+  padding:1.25vmax 3vmax;
+  cursor: pointer;
 }
