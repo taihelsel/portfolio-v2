@@ -21,6 +21,8 @@ html,body,#root,.App{
   display: inline-block;
   float: left;
   margin: 0 3vmax;
+  animation: fadeinleft 1.2s;
+
 }
 #landing-headshot-img{
   width:100%;
@@ -31,6 +33,7 @@ html,body,#root,.App{
   display: inline-block;
   float: left;
   margin-right:3vmax;
+  animation: fadeinleft 1.2s;
 }
 #about-info h1{
   font-size:2vmax;
@@ -45,6 +48,7 @@ html,body,#root,.App{
   font-size: 1.5vmax;
   text-align: left;
   width:97%;
+  animation: fadeinright 1s;
 }
 
 #landing-skills{
@@ -52,31 +56,71 @@ html,body,#root,.App{
   font-size: 3vmax;
 }
 #landing-skills-label{
-  
+  animation: fadeinright 1.2s;
 }
 .skills-list{
   margin: 0;
   padding: 0;
   list-style: none;
-  display: inline-block;
+  display: inline-grid;
   width: 33.3%;
 }
 .skill-label{
   font-size:2.6vmax;
   margin-bottom:1vmax;
   margin-top:0.5vmax;
+  animation: fadeinleft 1.2s;
 }
 .skill-item{
   font-size:1.6vmax;
   margin-bottom:0.5vmax;
+  animation: fadeinleft 1.2s;
 }
 #landing-portfolio-btn{
   width: 100%;
   position: absolute;
   bottom:7vmax;
+  transition:all 1s ease;
+  animation:fadeintoview 1.5s;
 }
 #landing-portfolio-btn a{
+  position: relative;
+  bottom:0;
   border:2px solid black;
   padding:1.25vmax 3vmax;
   cursor: pointer;
+  height:100%;
+  width:100%;
+  transition:all 0.6s ease;
+}
+#landing-portfolio-btn a:hover{
+  bottom:1vmax;
+}
+
+/*Animations*/
+@keyframes fadeinright{
+  0%{
+    transform: translateX(50%);
+  }
+  100%{
+    transform:translateX(0%)
+  }
+}
+@keyframes fadeinleft{
+  0%{
+    transform: translateX(-135%);
+  }
+  100%{
+    transform:translateX(0%)
+  }
+}
+@keyframes fadeintoview{
+  0%{
+    visibility: hidden;
+    opacity: 0;
+  }
+  100%{
+    visibility: visible;
+    opacity: 1;
+  }
 }
