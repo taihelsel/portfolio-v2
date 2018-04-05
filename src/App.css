@@ -3,3 +3,48 @@ html,body{
   padding:0;
   text-align: center;
 }
+/* Landing Page */
+#landing-page{
+  position: relative;
+}
+#landing-about{
+  margin-top:2em;
+}
+#landing-skills{
+
+}
+#landing-portfolio-btn{
+
+}
+#landing-headshot{
+  border: 3px solid blue;
+  width: 12vmax;
+  height: 12vmax;
+  display: inline-block;
+  float: left;
+  margin: 0 3vmax;
+}
+#landing-headshot-img{
+  width:100%;
+  height:100%;
+}
+#about-info{
+  text-align: left;
+  display: inline-block;
+  float: left;
+  margin-right:3vmax;
+}
+#about-info h1{
+  font-size:2vmax;
+  margin:15px 0;
+}
+#about-info h2{
+  margin:0 0 5px 0;
+  font-size:1.5vmax;
+  
+}
+#about-text{
+  font-size: 1.5vmax;
+  text-align: left;
+  width:97%;
+}
