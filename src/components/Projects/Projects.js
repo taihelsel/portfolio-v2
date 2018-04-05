@@ -4,7 +4,14 @@ import '../.././App.css';
 const Projects = () => {
     return (
       <section id="projects-page">
-        projects here
+        <ul className="projects-wrapper">
+            <li className="projects-item"><img src="" /></li>
+            <li className="projects-item"><img src="" /></li>
+            <li className="projects-item"><img src="" /></li>
+            <li className="projects-item"><img src="" /></li>
+            <li className="projects-item"><img src="" /></li>
+            <li className="projects-item"><img src="" /></li>
+        </ul>
       </section>
     );
 }
