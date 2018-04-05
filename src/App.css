@@ -4,6 +4,14 @@ html,body,#root,.App{
   text-align: center;
   width:100%;
   height:100%;
+  font-family: 'Playfair Display', serif;
+}
+:root{
+  --black:#0A1612;
+  --denim:#1A2930;
+  --gold:#F7CE3E;
+  --paper:#F4F4F4;
+  --charcoal:#373737;
 }
 /* Landing Page */
 #landing-page{
@@ -11,19 +19,19 @@ html,body,#root,.App{
   width:100%;
   height:100%;
   overflow-X: hidden;
+  background-color:var(--paper);
 }
 #landing-about{
   margin-top:2em;
 }
 #landing-headshot{
-  border: 3px solid blue;
   width: 12vmax;
   height: 12vmax;
   display: inline-block;
   float: left;
   margin: 0 3vmax;
-  animation: fadeinleft 1.2s;
-
+  animation: fadeinleft 1.25s;
+  border-radius: 3px;
 }
 #landing-headshot-img{
   width:100%;
@@ -35,6 +43,7 @@ html,body,#root,.App{
   float: left;
   margin-right:3vmax;
   animation: fadeinleft 1.2s;
+  color:var(--charcoal);
 }
 #about-info h1{
   font-size:2vmax;
@@ -43,13 +52,13 @@ html,body,#root,.App{
 #about-info h2{
   margin:0 0 5px 0;
   font-size:1.5vmax;
-  
 }
 #about-text{
   font-size: 1.5vmax;
   text-align: left;
   width:97%;
   animation: fadeinright 1s;
+  color:var(--charcoal);
 }
 
 #landing-skills{
@@ -58,6 +67,12 @@ html,body,#root,.App{
 }
 #landing-skills-label{
   animation: fadeinright 1.2s;
+  color:var(--charcoal);
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1.2px;
+  font-size:5vmax;
+  margin:0 0 1.5vmax 0;
+  padding:0;
 }
 .skills-list{
   margin: 0;
@@ -71,28 +86,35 @@ html,body,#root,.App{
   margin-bottom:1vmax;
   margin-top:0.5vmax;
   animation: fadeinleft 1.2s;
+  color:var(--charcoal);
+  font-family: 'Oswald', sans-serif;
 }
 .skill-item{
   font-size:1.6vmax;
   margin-bottom:0.5vmax;
   animation: fadeinleft 1.2s;
+  color:var(--charcoal);
 }
 #landing-portfolio-btn{
   width: 100%;
   position: absolute;
-  bottom:7vmax;
+  bottom:4vmax;
   transition:all 1s ease;
   animation:fadeintoview 1.5s;
+  color:var(--charcoal);
 }
 #landing-portfolio-btn a{
   position: relative;
   bottom:0;
-  border:2px solid black;
+  border:2px solid;
   padding:1.25vmax 3vmax;
   cursor: pointer;
   height:100%;
   width:100%;
   transition:all 0.6s ease;
+  font-size:1.5vmax;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
 }
 #landing-portfolio-btn a:hover{
   bottom:1vmax;

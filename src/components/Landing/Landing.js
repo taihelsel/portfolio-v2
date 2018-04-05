@@ -5,7 +5,7 @@ const Landing = () => {
     return (
       <section id="landing-page">
         <div id="landing-about">
-            <div id="landing-headshot"><img src="" alt=""/></div>
+            <div id="landing-headshot"><img src={require("../.././media/images/headshot.png")} alt="Headshot of Tai Helsel"/></div>
             <div id="about-info">
                 <h1>Tai Helsel</h1>
                 <h2>Full Stack Developer</h2>
@@ -45,8 +45,8 @@ const Landing = () => {
                 <li className="skill-item">Workflow</li>
                 <li className="skill-item">Agile Methodoloiges</li>
                 <li className="skill-item">Trello</li>
-                <li className="skill-item">OS</li>
-                <li className="skill-label">Windows</li>
+                <li className="skill-label">OS</li>
+                <li className="skill-item">Windows</li>
                 <li className="skill-item">Mac OS</li>
                 <li className="skill-item">Linux</li>
             </ul>
