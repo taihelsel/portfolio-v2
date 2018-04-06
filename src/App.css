@@ -18,7 +18,7 @@ html,body,#root,.App{
   position: relative;
   width:100%;
   height:100%;
-  overflow-X: hidden;
+  overflow: hidden;
   background-color:var(--paper);
 }
 #landing-about{
@@ -30,8 +30,6 @@ html,body,#root,.App{
   display: inline-block;
   float: left;
   margin: 0 3vmax;
-  -webkit-animation: fadeintoview 1.2s;
-  animation: fadeintoview 1.2s;
   border-radius: 7px;
   overflow: hidden;
 }
@@ -44,7 +42,6 @@ html,body,#root,.App{
   display: inline-block;
   float: left;
   margin-right:3vmax;
-  animation:fadeintoview 1.2s;
   color:var(--charcoal);
 }
 #about-info h1{
@@ -93,7 +90,6 @@ html,body,#root,.App{
   position: absolute;
   bottom:4vmax;
   transition:all 1s ease;
-  animation:fadeintoview 1.5s;
   color:var(--charcoal);
 }
 #landing-portfolio-btn a{
@@ -108,6 +104,7 @@ html,body,#root,.App{
   font-size:1.5vmax;
   font-family: 'Oswald', sans-serif;
   letter-spacing: 1px;
+  animation:fadeinbottom 1s;
 }
 #landing-portfolio-btn a:hover{
   bottom:1vmax;
@@ -118,24 +115,50 @@ html,body,#root,.App{
   width:100%;
   height:100%;
   background-color:var(--paper);
+  display:table;
 }
 .projects-wrapper{
   list-style: none;
-  margin:12vmax 0 0 0;
   padding:0;
-  width:80%;
-  display: inline-block;
+  display: table-cell;
+  vertical-align: middle;
 }
 .projects-item{
-  border:3px solid var(--black);
   display:inline-block;
-  width:25%;
+  width:40%;
   margin:2vmax;
-  height:25vh;
+  height:35vh;
   transition: all 1s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
-.projects-item:hover{
+.projects-item img{
+  width:100%;
+  height:100%;
+}
+.projects-item div{
+  position: absolute;
+  left:0;
+  top:0;
+  width:102%;
+  height:100%;
+  transition: all 0.5s ease;
+  display: table;
+}
+.projects-item div h1{
+  opacity: 0;
+  transition: all 0.75s ease;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1.2px;
+  font-size:2.5vmax;
+  display:table-cell; 
+  vertical-align:middle;
+  color:var(--paper);
+}
+.projects-item div:hover > h1,.projects-item div:hover{
   background-color:var(--gold);
+  opacity: 1;
 }
 /*Animations*/
 @keyframes fadeinright{
@@ -162,5 +185,13 @@ html,body,#root,.App{
   100%{
     visibility: visible;
     opacity: 1;
+  }
+}
+@keyframes fadeinbottom{
+  0%{
+    bottom:-15vw;
+  }
+  100%{
+    bottom:0;
   }
 }

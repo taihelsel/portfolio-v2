@@ -12,7 +12,7 @@ const Landing = () => {
                 <h2>Seattle, WA</h2>
                 <h2>tai.helsel@gmail.com</h2>
             </div>
-            <p id="about-text">Hi, my name is Tai Helsel and I'm a Full Stack Developer. I have been studying web development for almost two years now, and I've recently graduated from General Assembly's WDI course. At first coding was a summertime hobby. I would take on small projects and piece to together how things worked. It wasn't until I graduated High School that I began actively studying web development. About 6 months after graduating I had made the decision to change careers and attend General Assembly's WDI Course. I'm a very self-motivated person, and I have passion for knowledge. I have experience not only in contributing to team projects, but also leading them.</p>
+            <p id="about-text">Hi, my name is Tai Helsel and I'm a Full Stack Developer. I have been studying web development for almost two years now, and recently I've graduated from General Assembly's WDI course. At first coding was a summertime hobby. I would take on small projects and piece to together how things worked. It wasn't until I graduated High School that I began actively studying web development. About 6 months after graduating I had made the decision to change careers and attend General Assembly's WDI Course. I'm a very self-motivated person, and I have passion for knowledge. I have experience not only in contributing to team projects, but also leading them.</p>
         </div>
         <div id="landing-skills">
             <ul className="skills-list">
