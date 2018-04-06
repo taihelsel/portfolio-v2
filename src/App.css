@@ -5,6 +5,7 @@ html,body,#root,.App{
   width:100%;
   height:100%;
   font-family: 'Playfair Display', serif;
+  background-color:var(--paper);
 }
 :root{
   --black:#0A1612;
@@ -62,7 +63,6 @@ html,body,#root,.App{
 
 #landing-skills{
   margin-top: 6vmax;
-  font-size: 3vmax;
 }
 .skills-list{
   margin: 0;
@@ -159,6 +159,51 @@ html,body,#root,.App{
 .projects-item div:hover > h1,.projects-item div:hover{
   background-color:var(--gold);
   opacity: 1;
+}
+/*Mobile Display*/
+@media (max-width: 700px) {
+  
+}
+/*Desktop Display*/
+@media (min-width: 1300px) {
+  /*Landing Page*/
+  #landing-page{
+    max-width: 1380px;
+    display:inline-block;
+  }
+  #landing-headshot{
+    max-width: 172.250px;
+    max-height: 179.125px;
+    margin: 0 2.5em;
+  }
+  #about-info h1{
+    font-size: 30px;
+    margin: 15px 0;
+  }
+  #about-info h2{
+    margin: 0 0 5px 0;
+    font-size: 20px;
+  }
+  #about-text{
+    font-size:18px;
+  }
+  #landing-skills{
+    margin-top:5vh;
+    font-size:0;
+  }
+  .skill-label{
+    font-size:33px;
+  }
+  .skill-item{
+    font-size:22px;
+  }
+  #landing-portfolio-btn{
+    bottom:45px;
+  }
+  #landing-portfolio-btn a{
+    padding:17.25px 41.3px;
+    font-size:20px;
+  }
 }
 /*Animations*/
 @keyframes fadeinright{
