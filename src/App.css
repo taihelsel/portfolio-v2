@@ -25,17 +25,19 @@ html,body,#root,.App{
   margin-top:2em;
 }
 #landing-headshot{
-  width: 12vmax;
-  height: 12vmax;
+  width: 12.5vmax;
+  height: 13vmax;
   display: inline-block;
   float: left;
   margin: 0 3vmax;
-  animation:fadeintoview 1.2s;
-  border-radius: 3px;
+  -webkit-animation: fadeintoview 1.2s;
+  animation: fadeintoview 1.2s;
+  border-radius: 7px;
+  overflow: hidden;
 }
-#landing-headshot-img{
-  width:100%;
-  height:100%;
+#landing-headshot img{
+  width: 106%;
+  height: 105%;
 }
 #about-info{
   text-align: left;
@@ -56,7 +58,7 @@ html,body,#root,.App{
 #about-text{
   font-size: 1.4vmax;
   text-align: left;
-  width:97%;
+  width:99%;
   animation: fadeinright 1s;
   color:var(--charcoal);
 }
@@ -64,15 +66,6 @@ html,body,#root,.App{
 #landing-skills{
   margin-top: 6vmax;
   font-size: 3vmax;
-}
-#landing-skills-label{
-  animation: fadeinright 1.2s;
-  color:var(--charcoal);
-  font-family: 'Oswald', sans-serif;
-  letter-spacing: 1.2px;
-  font-size:5vmax;
-  margin:0 0 1.5vmax 0;
-  padding:0;
 }
 .skills-list{
   margin: 0;
