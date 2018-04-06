@@ -165,7 +165,7 @@ html,body,#root,.App{
   
 }
 /*Desktop Display*/
-@media (min-width: 1300px) {
+@media (min-width: 1280px) {
   /*Landing Page*/
   #landing-page{
     max-width: 1380px;
@@ -205,19 +205,33 @@ html,body,#root,.App{
     font-size:20px;
   }
 }
-@media (min-width: 1300px) and (max-height: 750px){
+@media (min-width: 1000px) and (max-height: 750px){
   /*Landing Page*/
   #landing-about{
     margin-top:0.5em;
   }
   #landing-skills{
-    margin-top:2em;
+    margin-top:23px;
+  }
+  .skill-label{
+    margin:5px 0;
+  }
+  .skill-item{
+    margin: 2.5px 0;
   }
   #landing-portfolio-btn{
-    bottom:25px;
+    bottom:30px;
   }
   #landing-portfolio-btn  a{
     padding:8.5px 30.5px;
+  }
+}
+@media (max-height:678px){
+  #landing-skills{
+    margin-top:30px;
+  }
+  #landing-portfolio-btn{
+    display:none;
   }
 }
 /*Animations*/
