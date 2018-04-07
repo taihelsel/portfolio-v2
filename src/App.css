@@ -157,6 +157,7 @@ html,body,#root,.App{
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  border-radius:2px;
 }
 .projects-item img{
   width:100%;
@@ -167,7 +168,7 @@ html,body,#root,.App{
   left:0;
   top:0;
   width:102%;
-  height:100%;
+  height:102%;
   transition: all 0.5s ease;
   display: table;
 }
