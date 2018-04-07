@@ -33,6 +33,7 @@ html,body,#root,.App{
   margin: 0 3vmax;
   border-radius: 7px;
   overflow: hidden;
+  animation: fadeintoview 1.2s;
 }
 #landing-headshot img{
   width: 106%;
@@ -44,6 +45,7 @@ html,body,#root,.App{
   float: left;
   margin-right:2vmax;
   color:var(--charcoal);
+  animation: fadeintoview 1.2s;
 }
 #about-info h1{
   font-size:2vmax;
