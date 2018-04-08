@@ -14,6 +14,22 @@ html,body,#root,.App{
   --paper:#F4F4F4;
   --charcoal:#373737;
 }
+.animation-top{
+  animation: fadeintop 1.2s;
+  display:inline-block !important;
+}
+.animation-fadein{
+  animation: fadeintoview 1.2s;
+  display:inline-block !important;
+}
+.animation-leftin{
+  animation: fadeinleft 1.2s;
+  display:inline-block !important;
+}
+.animation-rightin{
+  animation: fadeinright 1.2s;
+  display:inline-block !important;
+}
 /* Landing Page */
 #landing-page{
   position: relative;
@@ -143,15 +159,17 @@ html,body,#root,.App{
   height:100%;
   background-color:var(--paper);
   display:table;
+  overflow-X: hidden;
 }
 .projects-wrapper{
   list-style: none;
   padding:0;
   display: table-cell;
   vertical-align: middle;
+  overflow-X: hidden;
 }
 .projects-item{
-  display:inline-block;
+  display: none;
   width:40%;
   margin:2vmax;
   height:25vw;
@@ -291,6 +309,22 @@ html,body,#root,.App{
     transform:translateX(0%)
   }
 }
+@keyframes fadeoutright{
+  0%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform:translateX(500%)
+  }
+}
+@keyframes fadeoutleft{
+  0%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform:translateX(-500%)
+  }
+}
 @keyframes fadeintoview{
   0%{
     visibility: hidden;
@@ -307,5 +341,13 @@ html,body,#root,.App{
   }
   100%{
     bottom:0;
+  }
+}
+@keyframes fadeintop{
+  0%{
+    transform: translateY(-200%);
+  }
+  100%{
+    transform: translateY(0%);
   }
 }
