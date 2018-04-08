@@ -17,29 +17,41 @@ class App extends Component {
     img.onload = () =>{
       this.setState({
         initialImageCached:true,
-      })
+      });
+      $("#landing-portfolio-btn > a").click(()=>{
+        $('html, body').animate({
+          scrollTop: $("#projects-page").offset().top
+        }, 1000);
+      });
     }
   }
   componentDidMount(){
-    $("#landing-portfolio-btn").click(()=>{
-      $('html, body').animate({
-        scrollTop: $("#projects-page").offset().top
-      }, 1000);
-    });
     window.addEventListener("scroll", () => {
       const projects = document.getElementById("projects-page");
       const x = document.getElementsByClassName("projects-item");
       const offset =  window.screen.height/3;
-      let shouldAnimate = x[0].classList.contains("animation-fadein");
+      const shouldAnimate = x[0].classList.contains("animation-fadein");
       const projects_top = projects.getBoundingClientRect().top;
-      console.log(projects_top);
       if(projects_top < offset && !(shouldAnimate)){
+        x[0].classList.remove("animation-leftout");
+        x[1].classList.remove("animation-rightout");
+        x[2].classList.remove("animation-leftout");
+        x[3].classList.remove("animation-rightout"); 
         x[0].classList.add("animation-fadein");
         x[1].classList.add("animation-fadein");
         x[2].classList.add("animation-leftin");
         x[3].classList.add("animation-rightin"); 
+      }else if(projects_top > offset && shouldAnimate){
+        x[0].classList.remove("animation-fadein");
+        x[1].classList.remove("animation-fadein");
+        x[2].classList.remove("animation-leftin");
+        x[3].classList.remove("animation-rightin"); 
+        x[0].classList.add("animation-leftout");
+        x[1].classList.add("animation-rightout");
+        x[2].classList.add("animation-leftout");
+        x[3].classList.add("animation-rightout"); 
       }
-  })
+    });
   }
   render() {
     return (
@@ -51,5 +63,4 @@ class App extends Component {
     );
   }
 }
-
 export default App;

@@ -30,6 +30,15 @@ html,body,#root,.App{
   animation: fadeinright 1.2s;
   display:inline-block !important;
 }
+.animation-leftout{
+  animation: fadeoutleft 1.2s forwards;
+  display:inline-block !important;
+  
+}
+.animation-rightout{
+  animation: fadeoutright 1.2s forwards;
+  display:inline-block !important;
+}
 /* Landing Page */
 #landing-page{
   position: relative;
@@ -312,17 +321,27 @@ html,body,#root,.App{
 @keyframes fadeoutright{
   0%{
     transform: translateX(0%);
+    display:inline-block !important;
+  }
+  99.999%{
+    display:inline-block !important;
   }
   100%{
-    transform:translateX(500%)
+    transform:translateX(200%);
+    display: none !important;
   }
 }
 @keyframes fadeoutleft{
   0%{
     transform: translateX(0%);
+    display: inline-block !important;
+  }
+  99.999%{
+    display:inline-block !important;
   }
   100%{
-    transform:translateX(-500%)
+    transform:translateX(-200%);
+    display:none!important;
   }
 }
 @keyframes fadeintoview{
