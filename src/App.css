@@ -7,6 +7,9 @@ html,body,#root,.App{
   font-family: 'Playfair Display', serif;
   background-color:var(--paper);
 }
+.Home{
+  height:fit-content;
+}
 :root{
   --black:#0A1612;
   --denim:#1A2930;
