@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
 import $ from 'jquery'; 
 /*React Components*/
 import Home from "./components/Home.js";
-import KayT from "./components/Projects/KayT.js";
 class App extends Component {
   constructor(){
     super();
@@ -23,13 +21,10 @@ class App extends Component {
   }
   render() {
     return (
-      this.state.initialImageCached?
-        <Router>
-          <div className="App">
-            <Route exact path="/" component={Home} />
-            <Route exact path="/projects/kayt" component={KayT} />
-          </div>
-        </Router>:<div></div>
+      this.state.initialImageCached ?
+        <div className="App">
+          <Home />
+        </div> : <div></div>
     );
   }
 }
