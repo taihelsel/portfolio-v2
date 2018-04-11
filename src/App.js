@@ -19,11 +19,6 @@ class App extends Component {
       this.setState({
         initialImageCached:true,
       });
-      $("#landing-portfolio-btn > a").click(()=>{
-        $('html, body').animate({
-          scrollTop: $("#projects-page").offset().top
-        }, 1000);
-      });
     }
   }
   render() {

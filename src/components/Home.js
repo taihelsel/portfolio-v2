@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '.././App.css';
+import $ from 'jquery'; 
 /*React Components*/
 import Landing from "./Landing/Landing.js";
 import Projects from  "./Projects/Projects.js";
@@ -35,6 +36,11 @@ class Home extends Component {
                 }
             }
         });
+        $("#landing-portfolio-btn > a").click(()=>{
+            $('html, body').animate({
+              scrollTop: $("#projects-page").offset().top
+            }, 1000);
+          });
     }
   render() {
     return (
