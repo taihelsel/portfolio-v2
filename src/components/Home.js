@@ -13,7 +13,7 @@ class Home extends Component {
                 const offset = window.screen.height / 3;
                 const shouldAnimate = x[0].classList.contains("animation-fadein");
                 const projects_top = projects.getBoundingClientRect().top;
-                if (projects_top < offset && !(shouldAnimate)) {
+                if (projects_top < offset && !(shouldAnimate)&&document.getElementById("single-project").style.visibility==="hidden") {
                     document.getElementById("landing-portfolio-btn").setAttribute("style", "opacity:0");
                     x[0].classList.remove("animation-leftout");
                     x[1].classList.remove("animation-rightout");
