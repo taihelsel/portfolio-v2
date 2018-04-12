@@ -62,7 +62,7 @@ class Projects extends Component {
           <li data-links="https://taihelsel.github.io/game-project-host/games/2048/index.html,https://github.com/taihelsel/game-project-host/tree/master/games/2048" data-img="https://thumbs.gfycat.com/IdioticScarceGalapagosmockingbird-size_restricted.gif" data-name="2048 Remake" data-role="Front End Developer" data-desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo recusandae provident corrupti laborum beatae tempora similique unde repellendus reiciendis alias ducimus pariatur inventore aperiam mollitia odit, assumenda dolor a commodi?" data-skills="JavaScript,HTML5,CSS3" onClick={this.handleProjClick} className="projects-item"><div><h1>2048 Remake</h1></div><img src={require("../.././media/images/project-photos/2048-preview.png")} /></li>
         </ul>
         <SingleProject links={this.state.projectLinks} name={this.state.projectName} role={this.state.projectRole} desc={this.state.projectDesc} skills={this.state.projectSkills} preview={this.state.projectPreview}/>
-        <h1 onClick={this.handleCloseClick} className="close-btn">X</h1>
+        <h1 onClick={this.handleCloseClick} className="close-btn">&#8592;</h1>
       </section>
     );
   }
