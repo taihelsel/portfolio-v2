@@ -4,13 +4,15 @@ class SingeProject extends Component {
     render() {
         return (
             <div id="single-project" style={{visibility:"hidden"}}>
-                {this.props.name}
-                <br />
-                {this.props.role}
-                <br />
-                {this.props.desc}
-                <br />
-                {this.props.skills}
+                <h1 id="project-name">{this.props.name}</h1>
+                <h2 id="project-role">{this.props.role}</h2>
+                <img id="project-preview" src={this.props.preview} alt=""/>
+                <ul className="project-skills-wrapper">
+                    {this.props.skills.split(",").map((skill)=>{
+                        return(<li className="project-skill">{skill}</li>)
+                    })}
+                </ul>
+                <p id="project-desc">{this.props.desc}</p>
             </div>
         );
     }

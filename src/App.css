@@ -13,7 +13,7 @@ html,body,#root,.App{
 :root{
   --black:#0A1612;
   --denim:#1A2930;
-  --gold:#F7CE3E;
+  --gold:#e5bb25;;
   --paper:#F4F4F4;
   --charcoal:#373737;
 }
@@ -191,6 +191,7 @@ html,body,#root,.App{
   position: relative;
   overflow: hidden;
   border-radius:2px;
+  z-index: 1;
 }
 .projects-item img{
   width:100%;
@@ -219,19 +220,6 @@ html,body,#root,.App{
   background-color:var(--gold);
   opacity: 1;
 }
-/*Single Project*/
-#single-project{
-  display: inline-block;
-  height:85%;
-  width:85%;
-  visibility: hidden;
-  opacity: 0;
-  transition: all 1.2s ease;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 .close-btn{
   display: inline-block;
   position: absolute;
@@ -246,6 +234,59 @@ html,body,#root,.App{
   visibility: hidden;
   opacity: 0;
   transition: all 1.2s ease;
+}
+/*Single Project*/
+#single-project{
+  display: inline-block;
+  height:85%;
+  width:85%;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  text-align: center;
+}
+#project-name{
+  color:var(--charcoal);
+  padding:0 12px 12px 12px;
+  width:fit-content;
+  display:inline-block;
+  margin:0;
+  font-size:2.2vmax;
+}
+#project-role:before{
+  content:"Role ";
+  color:var(--gold);
+  padding:0 5px 2px 12px;
+}
+#project-role{
+  color:var(--charcoal);
+}
+#project-desc{
+  font-size:1.5vmax;
+  display:none;
+}
+#project-preview{
+  display:inline-block;
+  width:55vw;
+  max-width: 757px;
+  max-height: 430px;
+}
+.project-skills-wrapper{
+  list-style-type: circle;
+  width:100%;
+  padding:0;
+}
+.project-skill{
+  display: inline-block;
+  margin: 0 2vw;
+  font-weight:bolder;
+  color:var(--gold);
+  font-size:1.4vw;
 }
 /*Mobile Display*/
 @media (max-width: 700px) {
