@@ -13,6 +13,25 @@ class SingeProject extends Component {
                     })}
                 </ul>
                 <p id="project-desc">{this.props.desc}</p>
+                <ul className="project-links-wrapper">
+                    {this.props.links.split(",").map((link)=>{
+                        let label = "";
+                        if(link.indexOf("github.io")!==-1||link.indexOf("herokuapp")!==-1){
+                            label="Live Site";
+                        }else if(link.indexOf("trello")!==-1){
+                            label="Trello";
+                        }else if(link.indexOf("github.com")!==-1){
+                            label="GitHub";
+                        }
+                        return(
+                            <li className="project-link">
+                                <a href={link} target="_blank">
+                                    {label}
+                                </a>
+                            </li>
+                        )
+                    })}
+                </ul>
             </div>
         );
     }
