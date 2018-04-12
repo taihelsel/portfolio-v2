@@ -280,17 +280,41 @@ html,body,#root,.App{
   max-height: 430px;
 }
 .project-skills-wrapper{
-  list-style-type: circle;
-  width:100%;
-  padding:0;
-  margin-top:3em;
+  width: 71%;
+  padding: 0;
+  margin-top: 3em;
+  text-align: right;
+  position: absolute;
+  right: 13vmax;
 }
 .project-skill{
   display: inline-block;
-  margin: 0 2vw;
-  font-weight:bolder;
+  margin: 1vmax 2vw;
+  font-weight: bolder;
+  color: var(--denim);
+  font-size: 1.4vw;
+}
+.project-links-wrapper{
+  list-style: none;
+  display: inline-block;
+  position: absolute;
+  top: 25%;
+  right: 2%;
+}
+.project-link{
+  padding:1.2vmax 0;
+  position: relative;
+  transition: all 1s ease;
+  bottom:0;
+}
+.project-link a{
+  text-decoration: none;
   color:var(--gold);
-  font-size:1.4vw;
+  font-size:1.8vmax;
+  letter-spacing: 1.1px;
+}
+.project-link:hover{
+  bottom:1vmax;
 }
 /*Mobile Display*/
 @media (max-width: 700px) {
