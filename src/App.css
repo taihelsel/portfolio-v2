@@ -17,6 +17,10 @@ html,body,#root,.App{
   --paper:#F4F4F4;
   --charcoal:#373737;
 }
+.animation-fadeinbottom{
+  animation: fadeinbottom 1.2s;
+  display:inline-block !important;
+}
 .animation-top{
   animation: fadeintop 1.2s;
   display:inline-block !important;
@@ -176,22 +180,27 @@ html,body,#root,.App{
 }
 .projects-wrapper{
   list-style: none;
-  padding:0;
+  padding: 0;
   display: table-cell;
   vertical-align: middle;
-  overflow-X: hidden;
+  width: 80%;
+  text-align: left;
+  display: inline-block;
 }
 .projects-item{
   display: none;
-  width:40%;
-  margin:2vmax;
-  height:25vw;
+  width: 37vmax;
+  margin: 2vmax;
+  height: 25vw;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
   transition: all 1s ease;
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  border-radius:2px;
+  border-radius: 2px;
   z-index: 1;
+  text-align: center;
 }
 .projects-item img{
   width:100%;
@@ -222,7 +231,7 @@ html,body,#root,.App{
 }
 .close-btn{
   display: inline-block;
-  position: absolute;
+  position: fixed;
   left: 1em;
   top: 0.15em;
   font-size: 2.75em;
@@ -249,7 +258,7 @@ html,body,#root,.App{
   visibility: hidden;
   opacity: 0;
   transition: all 1s ease;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
