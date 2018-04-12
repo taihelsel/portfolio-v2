@@ -378,31 +378,38 @@ html,body,#root,.App{
 @keyframes about-fadeinright{
   0%{
     transform: translateX(70%);
+    opacity: 0;
   }
   100%{
-    transform:translateX(0%)
+    transform:translateX(0%);
+    opacity: 1;
   }
 }
 @keyframes fadeinright{
   0%{
+    opacity: 0;
     transform: translateX(145%);
   }
   100%{
-    transform:translateX(0%)
+    transform:translateX(0%);
+    opacity: 1;
   }
 }
 @keyframes fadeinleft{
   0%{
+    opacity: 0;
     transform: translateX(-145%);
   }
   100%{
-    transform:translateX(0%)
+    transform:translateX(0%);
+    opacity: 1;
   }
 }
 @keyframes fadeoutright{
   0%{
     transform: translateX(0%);
     display:inline-block !important;
+    opacity: 1;
   }
   99.999%{
     display:inline-block !important;
@@ -410,12 +417,14 @@ html,body,#root,.App{
   100%{
     transform:translateX(200%);
     display: none !important;
+    opacity: 0;
   }
 }
 @keyframes fadeoutleft{
   0%{
     transform: translateX(0%);
     display: inline-block !important;
+    opacity: 1;
   }
   99.999%{
     display:inline-block !important;
@@ -423,6 +432,7 @@ html,body,#root,.App{
   100%{
     transform:translateX(-200%);
     display:none!important;
+    opacity: 0;
   }
 }
 @keyframes fadeintoview{

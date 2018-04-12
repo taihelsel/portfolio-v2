@@ -25,6 +25,8 @@ class Home extends Component {
                     x[3].classList.add("animation-rightin");
                 } else if (projects_top > offset && shouldAnimate) {
                     document.getElementById("landing-portfolio-btn").setAttribute("style", "opacity:1");
+                    x[0].classList.remove("animation-leftin");
+                    x[1].classList.remove("animation-rightin");
                     x[0].classList.remove("animation-fadein");
                     x[1].classList.remove("animation-fadein");
                     x[2].classList.remove("animation-leftin");
