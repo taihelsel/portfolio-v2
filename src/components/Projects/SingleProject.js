@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import '../.././App.css';
 class SingeProject extends Component {
+    statusBanner = () =>{
+        if(this.props.status !== null){
+            return(<h1 className="project-status">Project is currently being built</h1>);
+        }
+    }
     render() {
         return (
             <div id="single-project" style={{visibility:"hidden"}}>
@@ -32,6 +37,7 @@ class SingeProject extends Component {
                         )
                     })}
                 </ul>
+                {this.statusBanner()}
             </div>
         );
     }

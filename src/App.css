@@ -231,7 +231,7 @@ html,body,#root,.App{
 }
 .close-btn{
   display: inline-block;
-  position: fixed;
+  position: absolute;
   left: 1em;
   top: 0.15em;
   font-size: 2.75em;
@@ -258,7 +258,7 @@ html,body,#root,.App{
   visibility: hidden;
   opacity: 0;
   transition: all 1s ease;
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -330,6 +330,17 @@ html,body,#root,.App{
 }
 .project-link:hover{
   bottom:1vmax;
+}
+.project-status{
+  margin-top:10vmax;
+  text-align: center;
+  width:50%;
+  display: inline-block;
+  color:var(--gold);
+  font-size:1.8vmax;
+  border-bottom:2px solid var(--charcoal);
+  border-top:2px solid var(--charcoal);
+  padding: 15px 0;
 }
 /*Mobile Display*/
 @media (max-width: 700px) {
