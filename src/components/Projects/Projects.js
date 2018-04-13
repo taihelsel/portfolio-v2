@@ -72,6 +72,15 @@ class Projects extends Component {
     e.currentTarget.setAttribute("style", "visibility:hidden;opacity:0;");
     document.getElementById("single-project").setAttribute("style", "visibility:hidden;opacity:0;");
   }
+  componentWillMount = () =>{
+    let x = document.getElementsByClassName("projects-item");
+    for(let i=0;i<x.length;i++){
+      let img = new Image();
+      img.onload = () =>{
+        img.src = x[i].getAttribute("data-img");
+      }
+    }
+  }
   render() {
     return (
       <section id="projects-page">
