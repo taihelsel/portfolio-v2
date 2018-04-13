@@ -338,6 +338,7 @@ html,body,#root,.App{
   display: inline-block;
   color:var(--gold);
   font-size:1.8vmax;
+  background-color:var(--charcoal);
   border-bottom:2px solid var(--charcoal);
   border-top:2px solid var(--charcoal);
   padding: 15px 0;
