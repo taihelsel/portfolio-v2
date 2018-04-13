@@ -242,9 +242,7 @@ html,body,#root,.App{
   color: var(--charcoal);
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: all 1.2s ease;
-  -o-transition: all 1.2s ease;
-  transition: all 1.2s ease;
+  transition: all 0.8s ease;
 }
 .close-btn:hover{
   color:var(--gold);
