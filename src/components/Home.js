@@ -24,7 +24,7 @@ class Home extends Component {
         x[2].classList.add("animation-leftin");
         x[3].classList.add("animation-rightin");
         x[4].classList.add("animation-leftin");
-      } else if (projects_top > offset && shouldAnimate) {
+      } else if (projects_top > offset && shouldAnimate  && document.getElementById("single-project").style.visibility === "hidden") {
         document.getElementById("landing-portfolio-btn").setAttribute("style", "opacity:1");
         x[0].classList.remove("animation-leftin");
         x[1].classList.remove("animation-rightin");
@@ -38,10 +38,14 @@ class Home extends Component {
         x[2].classList.add("animation-leftout");
         x[3].classList.add("animation-rightout");
         x[4].classList.add("animation-leftout");
-      }else if (projects_top > offset){
-        document.getElementById("single-project").setAttribute("style", "visibility:hidden;opacity:0;");
+      }else if (projects_top > offset  && document.getElementById("single-project").style.visibility === "visible"){
+        document.getElementById("single-project").setAttribute("style", "visibility:visible;opacity:0;");
         document.getElementById("landing-portfolio-btn").setAttribute("style", "opacity:1");
         document.getElementsByClassName("close-btn")[0].setAttribute("style", "visibility:hidden;opacity:0;");
+      }else if(projects_top < offset  && document.getElementById("single-project").style.visibility === "visible" && document.getElementById("single-project").style.opacity === "0"){
+        document.getElementById("single-project").setAttribute("style", "visibility:visible;opacity:1;");
+        document.getElementById("landing-portfolio-btn").setAttribute("style", "opacity:0");
+        document.getElementsByClassName("close-btn")[0].setAttribute("style", "visibility:visible;opacity:1;");
       }
     });
     $("#landing-portfolio-btn > a").click(() => {
