@@ -9,7 +9,7 @@ import cryptoGif from "../.././media/images/project-photos/crypto.gif";
 import restGif from "../.././media/images/project-photos/rest.gif";
 import x2048Gif from "../.././media/images/project-photos/2048.gif";
 import tatGif from "../.././media/images/project-photos/tat.gif";
-import classifierGif from  "../.././media/images/project-photos/classifier.gif";
+import classifierGif from "../.././media/images/project-photos/classifier.gif";
 class Projects extends Component {
   constructor() {
     super();
@@ -36,28 +36,28 @@ class Projects extends Component {
       projectPreview: img.src,
       projectLinks: el.getAttribute("data-links"),
       projectStatus: el.getAttribute("data-under-construction"),
+    }, () => {
+      const x = document.getElementsByClassName("projects-item");
+      x[0].classList.remove("animation-fadein");
+      x[1].classList.remove("animation-fadein");
+      x[0].classList.remove("animation-leftin");
+      x[1].classList.remove("animation-rightin");
+      x[2].classList.remove("animation-leftin");
+      x[3].classList.remove("animation-rightin");
+      x[4].classList.remove("animation-leftin");
+      x[5].classList.remove("animation-rightin");
+      x[0].classList.add("animation-leftout");
+      x[1].classList.add("animation-rightout");
+      x[2].classList.add("animation-leftout");
+      x[3].classList.add("animation-rightout");
+      x[4].classList.add("animation-leftout");
+      x[5].classList.add("animation-rightout");
+      document.getElementById("single-project").setAttribute("style", "visibility:visible;opacity:1;");
+      document.getElementsByClassName("close-btn")[0].setAttribute("style", "visibility:visible;opacity:1;");
+      $('html, body').animate({
+        scrollTop: $(".close-btn").offset().top
+      }, 1000);
     });
-    const x = document.getElementsByClassName("projects-item");
-    x[0].classList.remove("animation-fadein");
-    x[1].classList.remove("animation-fadein");
-    x[0].classList.remove("animation-leftin");
-    x[1].classList.remove("animation-rightin");
-    x[2].classList.remove("animation-leftin");
-    x[3].classList.remove("animation-rightin");
-    x[4].classList.remove("animation-leftin");
-    x[5].classList.remove("animation-rightin");
-    x[0].classList.add("animation-leftout");
-    x[1].classList.add("animation-rightout");
-    x[2].classList.add("animation-leftout");
-    x[3].classList.add("animation-rightout");
-    x[4].classList.add("animation-leftout");
-    x[5].classList.add("animation-rightout");
-    document.getElementById("single-project").setAttribute("style", "visibility:visible;opacity:1;");
-    document.getElementsByClassName("close-btn")[0].setAttribute("style", "visibility:visible;opacity:1;");
-    $('html, body').animate({
-      scrollTop: $(".close-btn").offset().top
-    }, 1000);
-
   }
   handleCloseClick = (e) => {
     const x = document.getElementsByClassName("projects-item");
