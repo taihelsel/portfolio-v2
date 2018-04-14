@@ -19,11 +19,13 @@ class Home extends Component {
         x[2].classList.remove("animation-leftout");
         x[3].classList.remove("animation-rightout");
         x[4].classList.remove("animation-leftout");
+        x[5].classList.remove("animation-rightout");
         x[0].classList.add("animation-fadein");
         x[1].classList.add("animation-fadein");
         x[2].classList.add("animation-leftin");
         x[3].classList.add("animation-rightin");
         x[4].classList.add("animation-leftin");
+        x[5].classList.add("animation-rightin");
       } else if (projects_top > offset && shouldAnimate  && document.getElementById("single-project").style.visibility === "hidden") {
         document.getElementById("landing-portfolio-btn").setAttribute("style", "opacity:1");
         x[0].classList.remove("animation-leftin");
@@ -33,11 +35,13 @@ class Home extends Component {
         x[2].classList.remove("animation-leftin");
         x[3].classList.remove("animation-rightin");
         x[4].classList.remove("animation-leftin");
+        x[5].classList.remove("animation-rightin");
         x[0].classList.add("animation-leftout");
         x[1].classList.add("animation-rightout");
         x[2].classList.add("animation-leftout");
         x[3].classList.add("animation-rightout");
         x[4].classList.add("animation-leftout");
+        x[5].classList.add("animation-rightout");
       }else if (projects_top > offset  && document.getElementById("single-project").style.visibility === "visible"){
         document.getElementById("single-project").setAttribute("style", "visibility:visible;opacity:0;");
         document.getElementById("landing-portfolio-btn").setAttribute("style", "opacity:1");
