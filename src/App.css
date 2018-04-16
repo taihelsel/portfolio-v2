@@ -349,6 +349,7 @@ html,body,#root,.App{
   }
   #landing-about{
     text-align: center;
+    margin-top: 4vw;
   }
   #about-info,#landing-headshot{
     float:none;
@@ -357,26 +358,38 @@ html,body,#root,.App{
   #landing-headshot{
     max-width: 138px;
     max-height: 147px;
-    height:16vmax;
-    width:15.5vmax;
-    margin:0 2vmax;
+    height: 32vw;
+    width: 29.5vw;
+    margin: 0 2vmax;
   }
   #about-info{
     margin-left:1.5vw;
   }
   #about-info h1{
-    font-size:2.5vmax;
+    font-size: 5vw;
+    margin-bottom:2vw;
   }
   #about-info h2{
-    font-size:1.8vmax;
-    margin-bottom:7.5px;
+    font-size: 3.5vw;
+    margin-bottom:1.8vw;
+  }
+  #about-info h2:last-of-type{
+    margin-bottom:2vw;
+  }
+  .about-links{
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    bottom: 1vw;
+    position: relative;
   }
   .about-links li a{
     font-size:1.8vmax;
   }
   #about-text{
     width:90%;
-    font-size:1.5vmax;
+    font-size:3vw;
     display: inline-block;
   }
   #landing-skills{
@@ -386,6 +399,65 @@ html,body,#root,.App{
     position: relative;
     bottom:4vmax;;
     margin-top:8vmax;
+    display:inline-block;
+  }
+  /*Projects*/
+  .projects-wrapper{
+    overflow-x: hidden;
+  }
+  .projects-item{
+    width: 95%;
+    height: 29vmax;
+  }
+  .close-btn{
+    left:0.5em;
+  }
+  #single-project{
+    width: 100%;
+    top: 19%;
+    height: fit-content;
+  }
+  #project-name{
+    font-size:6vw;
+  }
+  #project-role{
+    font-size: 5vw;
+    margin-top: 1vw;
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+  #project-preview{
+    display: inline-block;
+    width: 90vw;
+    max-width: 757px;
+    max-height: 430px;
+  }
+  .project-links-wrapper{    
+    top: unset;
+    right: 0%;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-top: 0;
+    padding: 0;
+  }
+  .project-link{
+    padding:0;
+    margin:0 3vw;
+    display:inline-block;
+  }
+  .project-skills-wrapper{
+    width: 79%;
+    padding: 0;
+    margin-top: 3vw;
+    text-align: right;
+    position: absolute;
+    right: 16vw;
+  }
+  .project-skill{
+    font-size: 2.8vw;
+    margin: 1vw 2vw;
   }
 }
 /*Desktop Display*/
@@ -462,7 +534,7 @@ html,body,#root,.App{
     margin: 15px;
   }
 }
-@media (max-height:678px){
+@media (max-height:678px)and (min-width: 500px){
   #landing-skills{
     margin-top:30px;
   }

@@ -11,13 +11,6 @@ class SingeProject extends Component {
             <div id="single-project" style={{visibility:"hidden"}}>
                 <h1 id="project-name">{this.props.name}</h1>
                 <h2 id="project-role">{this.props.role}</h2>
-                <img id="project-preview" src={this.props.preview} alt=""/>
-                <ul className="project-skills-wrapper">
-                    {this.props.skills.split(",").map((skill)=>{
-                        return(<li className="project-skill">{skill}</li>)
-                    })}
-                </ul>
-                <p id="project-desc">{this.props.desc}</p>
                 <ul className="project-links-wrapper">
                     {this.props.links.split(",").map((link)=>{
                         let label = "";
@@ -37,6 +30,13 @@ class SingeProject extends Component {
                         )
                     })}
                 </ul>
+                <img id="project-preview" src={this.props.preview} alt=""/>
+                <ul className="project-skills-wrapper">
+                    {this.props.skills.split(",").map((skill)=>{
+                        return(<li className="project-skill">{skill}</li>)
+                    })}
+                </ul>
+                <p id="project-desc">{this.props.desc}</p>
                 {this.statusBanner()}
             </div>
         );
