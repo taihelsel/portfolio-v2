@@ -183,14 +183,14 @@ html,body,#root,.App{
   padding: 0;
   display: table-cell;
   vertical-align: middle;
-  width: 80%;
-  text-align: left;
+  width: 90%;
+  text-align: center;
   display: inline-block;
 }
 .projects-item{
   display: none;
-  width: 37vmax;
-  margin: 2vmax;
+  width: 38.5vmax;
+  margin: 1vmax;
   height: 25vw;
   -webkit-transition: all 1s ease;
   -o-transition: all 1s ease;
@@ -342,8 +342,51 @@ html,body,#root,.App{
   padding: 15px 0;
 }
 /*Mobile Display*/
-@media (max-width: 700px) {
-  
+@media (max-width: 500px) {
+  /*about*/
+  #landing-page{
+    height:fit-content;
+  }
+  #landing-about{
+    text-align: center;
+  }
+  #about-info,#landing-headshot{
+    float:none;
+    display:inline-block;
+  }
+  #landing-headshot{
+    max-width: 138px;
+    max-height: 147px;
+    height:16vmax;
+    width:15.5vmax;
+    margin:0 2vmax;
+  }
+  #about-info{
+    margin-left:1.5vw;
+  }
+  #about-info h1{
+    font-size:2.5vmax;
+  }
+  #about-info h2{
+    font-size:1.8vmax;
+    margin-bottom:7.5px;
+  }
+  .about-links li a{
+    font-size:1.8vmax;
+  }
+  #about-text{
+    width:90%;
+    font-size:1.5vmax;
+    display: inline-block;
+  }
+  #landing-skills{
+    margin-top:2vmax;
+  }
+  #landing-portfolio-btn{
+    position: relative;
+    bottom:4vmax;;
+    margin-top:8vmax;
+  }
 }
 /*Desktop Display*/
 @media (min-width: 1280px) {
