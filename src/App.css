@@ -414,8 +414,11 @@ html,body,#root,.App{
   }
   #single-project{
     width: 100%;
-    top: 19%;
+    top: unset;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
+    margin-top: 70%;
   }
   #project-name{
     font-size:6vw;
@@ -447,6 +450,9 @@ html,body,#root,.App{
     margin:0 3vw;
     display:inline-block;
   }
+  .project-link a{
+    font-size:4vw;
+  }
   .project-skills-wrapper{
     width: 79%;
     padding: 0;
@@ -456,8 +462,13 @@ html,body,#root,.App{
     right: 16vw;
   }
   .project-skill{
-    font-size: 2.8vw;
+    font-size: 3.5vw;
     margin: 1vw 2vw;
+  }
+  .project-status{
+    position: relative;
+    margin-top:0;
+    top:17vw;
   }
 }
 /*Desktop Display*/
