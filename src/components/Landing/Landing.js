@@ -17,7 +17,7 @@ const Landing = () => {
                     <li><a href="https://resume.creddle.io/resume/v8ri9fi0fi" target="_blank">Resume</a></li>
                 </ul>
             </div>
-            <p id="about-text">Hi, my name is Tai Helsel and I'm a Full Stack Developer. I have been studying web development for almost two years now, and I've recently graduated from General Assembly's WDI course. At first coding was a summertime hobby. I would take on small projects and piece to together how things worked. It wasn't until I graduated High School that I began actively studying web development. About 6 months after graduating I had made the decision to change careers and attend General Assembly's WDI Course. I'm a very self-motivated person, and I have passion for knowledge. I have experience not only in contributing to team projects, but also leading them.</p>
+            <p id="about-text">Hi my name is Tai Helsel and I'm a Full Stack Developer. I have studied web development for almost two years now, and recently graduated from General Assembly's WDI course. At first coding was a summertime hobby. I would take on small projects and piece to together how things worked. It wasn't until I finished High School that I began actively studying web development. Shortly after graduating I made the decision return to school and attend General Assembly's WDI Course. Where I refined the skills I had been learning throughout High School. I'm a very self-motivated person with a passion for knowledge. I have experience not only in contributing to team projects, but also leading them.</p>
         </div>
         <div id="landing-skills">
             <ul className="skills-list">
