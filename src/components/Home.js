@@ -8,7 +8,7 @@ class Home extends Component {
   onScroll = () => {
     const projects = document.getElementById("projects-page");
     const x = document.getElementsByClassName("projects-item");
-    const offset = window.innerWidth >= 500 ? window.screen.height / 3 : 100;
+    const offset = window.innerWidth >= 500 ? window.screen.height / 3 : window.screen.height/2;
     console.log("offset", offset);
     const shouldAnimate = x[0].classList.contains("animation-fadein");
     const projects_top = projects.getBoundingClientRect().top;
