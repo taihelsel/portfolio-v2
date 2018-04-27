@@ -115,9 +115,11 @@ html,body,#root,.App{
 #about-text{
   font-size: 1.4vmax;
   text-align: left;
-  width:99%;
-  animation: about-fadeinright 1s;
-  color:var(--charcoal);
+  width: 99%;
+  color: var(--charcoal);
+  line-height: 2.3vmax;
+  margin-left: 14px;
+  min-height: 10vw;
 }
 
 #landing-skills{
