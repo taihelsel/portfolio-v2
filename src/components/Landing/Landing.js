@@ -17,7 +17,7 @@ const Landing = () => {
                     <li><a href="https://resume.creddle.io/resume/v8ri9fi0fi" target="_blank">Resume</a></li>
                 </ul>
             </div>
-            <p id="about-text">Hi my name is Tai Helsel and I'm a Full Stack Developer. I have studied web development for almost two years now, and recently graduated from General Assembly's WDI course.  While studying at General Assembly I learned the best practices for the skills I had been teaching myself throughout High School. My favorite stack to work with so far is the PERN stack (PostgreSQL,Express,React,NodeJs). I am a very self-motivated person with a hunger for knowledge. I have experience not only in contributing to team projects, but also leading them.</p>
+            <p id="about-text">Hi, my name is Tai Helsel and I'm a Full Stack Developer. I have been studying and developing applications on the web for over two years now. My favorite thing about working in languages like JavaScript is seeing immediate results from just a few lines of code and all the resources available for a web developer. I've got tons of projects that aren't highlighted here. If you want to see more, head over to my GitHub.</p>
         </div>
         <div id="landing-skills">
             <ul className="skills-list">
