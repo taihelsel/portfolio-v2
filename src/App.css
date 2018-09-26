@@ -525,9 +525,9 @@ html,body,#root,.App{
   #landing-about{
     margin-top:0.5em;
   }
-  #landing-skills{
+  /* #landing-skills{
     margin-top:23px;
-  }
+  } */
   .skill-label{
     margin:5px 0;
   }
